@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs title="Businses Hours Management"
+		scrolling="true"
+		height="650"
+        description="Business Hours Management">
+        <Require feature="settitle" />
+        <Require feature="dynamic-height" />
+        <Require feature="pubsub-2" />
+        <Require feature="setprefs" />
+        <Require feature="loadingindicator">
+        <Param name="manual-dismiss">false</Param>
+        <Param name="loading-timeout">10</Param>
+        </Require>
+    </ModulePrefs>
+
+    <Content type="html">
+        <![CDATA[
+            <!DOCTYPE html>
+            <!-- Styling -->
+            <link rel="stylesheet" href="Hours.css" type="text/css" />
+			          
+            <!-- jQuery -->
+            <script type="text/javascript" src="jquery.min.js"></script>
+			
+			<!-- Credentials -->
+			<script type="text/javascript" src="credentials.js"></script>
+			
+         
+           <!-- Finesse Library -->
+            <script type="text/javascript" src="/desktop/assets/js/finesse.js"></script>
+			
+			<!-- Gadget Library -->
+			<script type="text/javascript" src="Hours.js"></script>
+
+            <body>
+		
+				<div class="container">
+					<h4>Use this form to update weekly business hours</h4>
+							<br/>
+						<table id="hoursTable" class="table table-bordered data-table">
+							<tbody>
+							</tbody>
+						</table>
+				</div>
+	         </body>
+			
+			<script type="application/javascript">
+				loadXMLDoc();
+			</script>
+        ]]>
+    </Content>
+</Module>

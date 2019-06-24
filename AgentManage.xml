@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs title="Agent Target Management"
+		scrolling="true"
+		height="650"
+        description="Agent Target Management">
+        <Require feature="settitle" />
+        <Require feature="dynamic-height" />
+        <Require feature="pubsub-2" />
+        <Require feature="setprefs" />
+        <Require feature="loadingindicator">
+        <Param name="manual-dismiss">false</Param>
+        <Param name="loading-timeout">10</Param>
+        </Require>
+    </ModulePrefs>
+
+    <Content type="html">
+        <![CDATA[
+            <!DOCTYPE html>
+            <!-- Styling -->
+            <link rel="stylesheet" href="AgentManage.css" type="text/css" />
+			          
+            <!-- jQuery -->
+            <script type="text/javascript" src="jquery.min.js"></script>
+			
+			<!-- Credentials -->
+			<script type="text/javascript" src="credentials.js"></script>
+           
+           <!-- Finesse Library -->
+            <script type="text/javascript" src="/desktop/assets/js/finesse.js"></script>
+			
+			<!-- Gadget Library -->
+			<script type="text/javascript" src="AgentManage.js"></script>
+
+            <body>
+		
+				<div class="container">
+					<h4>Use this form to add/update/delete assignments</h4>
+
+					<form id="addResource" action="JavaScript:addAgent()"/>
+					<table id="addAgent" class="table table-bordered data-addagent">
+						<tbody>
+						<tr><th>Add Number</th><th>Assign Resource</th><th>Assign Redirect</th><th>Set Voicemail</th><th width='200px'>Action</th></tr>
+						<tr>
+							<td><input type="number" number="number" name="number" class="form-control" placeholder="12819010554" required="">
+							</td>
+							<td><select number="resource" id="Resource" class="form-control" required=""></select>
+							</td>
+							<td><select number="redirect" id="redirect" class="form-control" required="">
+									<option value="CSQ">CSQ</option>
+									<option value="Voicemail">Voicemail</option>
+								</select>
+							</td>
+							<td>
+								<input type="number" number="voicemail" name="voicemail" class="form-control" placeholder="14062259632" required="">
+							</td>
+							<td><button type="submit" class="btn btn-success save-btn">Add</button>
+							</td>
+						</tbody>
+					</table>
+					</form>		
+					
+						<br/>
+						<table id="marion" class="table table-bordered data-table">
+							<tbody>
+							</tbody>
+						</table>
+				</div>
+	         </body>
+			
+			<script type="application/javascript">
+				getResource();
+				loadXMLDoc();
+			</script>
+        ]]>
+    </Content>
+</Module>

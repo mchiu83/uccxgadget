@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+    <ModulePrefs title="Holiday Management"
+		scrolling="true"
+		height="650"
+        description="Holiday Management">
+        <Require feature="settitle" />
+        <Require feature="dynamic-height" />
+        <Require feature="pubsub-2" />
+        <Require feature="setprefs" />
+        <Require feature="loadingindicator">
+        <Param name="manual-dismiss">false</Param>
+        <Param name="loading-timeout">10</Param>
+        </Require>
+    </ModulePrefs>
+
+    <Content type="html">
+        <![CDATA[
+            <!DOCTYPE html>
+            <!-- Styling -->
+            <link rel="stylesheet" href="Holidays.css" type="text/css" />
+			          
+            <!-- jQuery -->
+            <script type="text/javascript" src="jquery.min.js"></script>
+			
+			<!-- Credentials -->
+			<script type="text/javascript" src="credentials.js"></script>
+			
+         
+           <!-- Finesse Library -->
+            <script type="text/javascript" src="/desktop/assets/js/finesse.js"></script>
+			
+			<!-- Gadget Library -->
+			<script type="text/javascript" src="Holidays.js"></script>
+
+            <body>
+		
+				<div class="container">
+					<h4>Use this form to add/delete holidays</h4>
+					<table id="addHolidayTable" class="table table-bordered data-addtable">
+					<form id="addResource" action="JavaScript:addHoliday()"/>
+						<tbody>
+						<tr><th>Holiday Name</th><th>Set Date</th><th width='200px'>Action</th></tr>
+						<tr>
+							<td><input type="text" number="name" name="name" class="form-control" maxlength="50" placeholder="Name of Holiday">
+							</td>
+							<td><input type="date" number="date" id="date" name="date" class="form-control" maxlength="10" placeholder="08/10/2020" required="">
+							</td>
+							<td>	<button type="submit" class="btn btn-success save-btn">Add</button>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					</form>		
+						<br/>
+						<table id="holidayTable" class="table table-bordered data-table">
+							<tbody>
+							</tbody>
+						</table>
+				</div>
+	         </body>
+			
+			<script type="application/javascript">
+				loadXMLDoc();
+			</script>
+        ]]>
+    </Content>
+</Module>
