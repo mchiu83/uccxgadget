@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Parameters><Holidays>
+<Holiday><Name>Day 1</Name><Date>6/8/19</Date></Holiday>
+<Holiday><Name>Day 2</Name><Date>6/14/19</Date></Holiday>
+</Holidays>
+<Greetings>
+<Greeting>
+<ID>1001</ID>
+<Name>Intro</Name>
+<Description>Introduction greeting before queueing</Description>
+<FileName>1001.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1002</ID>
+<Name>Emergency</Name>
+<Description>Emergency notification announcement</Description>
+<FileName>1002.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1003</ID>
+<Name>BusyAgent</Name>
+<Description>Play prompt when call is immediately queued</Description>
+<FileName>1003.wav</FileName>
+<Value>False</Value>
+</Greeting>
+<Greeting>
+<ID>1004</ID>
+<Name>CustomNotification1</Name>
+<Description>Play Custom Notification before queue</Description>
+<FileName>1004.wav</FileName>
+<Value>False</Value>
+</Greeting>
+<Greeting>
+<ID>1005</ID>
+<Name>CustomNotification2</Name>
+<Description>Play Custom Notification before queue</Description>
+<FileName>1005.wav</FileName>
+<Value>False</Value>
+</Greeting>
+<Greeting>
+<ID>1006</ID>
+<Name>CustomNotification3</Name>
+<Description>Play Custom Notification before queue</Description>
+<FileName>1006.wav</FileName>
+<Value>False</Value>
+</Greeting>
+<Greeting>
+<ID>1007</ID>
+<Name>QueueDelayPrompt1</Name>
+<Description>Play Delay Message during queue Cycle 1</Description>
+<FileName>1007.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1008</ID>
+<Name>QueueDelayPrompt2</Name>
+<Description>Play Delay Message during queue Cycle 2</Description>
+<FileName>1008.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1009</ID>
+<Name>QueueDelayPrompt3</Name>
+<Description>Play Delay Message during queue Cycle 3</Description>
+<FileName>1009.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1010</ID>
+<Name>AfterHoursGreeting</Name>
+<Description>Play afterhours greeting before transfer</Description>
+<FileName>1010.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1011</ID>
+<Name>LunchGreeting</Name>
+<Description>Play lunch greeting before transfer</Description>
+<FileName>1011.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1012</ID>
+<Name>TrainingGreeting</Name>
+<Description>Play lunch greeting before transfer</Description>
+<FileName>1012.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1013</ID>
+<Name>CustomHoldMusic</Name>
+<Description>Play custom hold music during queue</Description>
+<FileName>1013.wav</FileName>
+<Value>False</Value>
+</Greeting>
+<Greeting>
+<ID>1014</ID>
+<Name>HolidayGreeting</Name>
+<Description>Play greeting before holiday action transfer</Description>
+<FileName>1014.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1015</ID>
+<Name>ClosedGreeting</Name>
+<Description>Play greeting before businses hour closed action</Description>
+<FileName>1015.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1016</ID>
+<Name>DirectAgentPrompt</Name>
+<Description>
+Play greeting before sending call to agent direct queue
+</Description>
+<FileName>1016.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1017</ID>
+<Name>CallbackPrompt</Name>
+<Description>
+Play prompt during queue delay to present callback option
+</Description>
+<FileName>1017.wav</FileName>
+<Value>True</Value>
+</Greeting>
+<Greeting>
+<ID>1018</ID>
+<Name>OptOutVoicemail</Name>
+<Description>
+Play prompt during queue delay to present voicemail option
+</Description>
+<FileName>1018.wav</FileName>
+<Value>True</Value>
+</Greeting>
+</Greetings>
+<Hours>
+<Weekday>
+<Day>Sunday</Day>
+<Start>7:00 AM</Start>
+<End>5:00 PM</End>
+</Weekday>
+<Weekday>
+<Day>Monday</Day>
+<Start>7:00 AM</Start>
+<End>7:00 PM</End>
+</Weekday>
+<Weekday>
+<Day>Tuesday</Day>
+<Start>7:30 AM</Start>
+<End>11:00 PM</End>
+</Weekday>
+<Weekday>
+<Day>Wednesday</Day>
+<Start>1:00 AM</Start>
+<End>6:00 PM</End>
+</Weekday>
+<Weekday>
+<Day>Thursday</Day>
+<Start>7:00 AM</Start>
+<End>5:00 PM</End>
+</Weekday>
+<Weekday>
+<Day>Friday</Day>
+<Start>7:00 AM</Start>
+<End>5:00 PM</End>
+</Weekday>
+<Weekday>
+<Day>Saturday</Day>
+<Start>7:00 AM</Start>
+<End>5:00 PM</End>
+</Weekday>
+</Hours>
+<Settings>
+<Setting>
+<Name>CSQ</Name>
+<Description>General Queue</Description>
+<Value>MarionTollFree</Value>
+</Setting>
+<Setting>
+<Name>PromptFolder</Name>
+<Description>Prompt folder path</Description>
+<Value>Marion</Value>
+</Setting>
+<Setting>
+<Name>Callback</Name>
+<Description>Allow Callback Option</Description>
+<Value>Enabled</Value>
+</Setting>
+<Setting>
+<Name>Record</Name>
+<Description>Record Calls</Description>
+<Value>Disabled</Value>
+</Setting>
+<Setting>
+<Name>State</Name>
+<Description>System State</Description>
+<Value>Normal</Value>
+</Setting>
+<Setting>
+<Name>QueueDelay</Name>
+<Description>Call Answer Thresthold (secs)</Description>
+<Value>30</Value>
+</Setting>
+<Setting>
+<Name>QueuePromptCycle</Name>
+<Description>Queue Prompt Cycle using std MOH (secs)</Description>
+<Value>15</Value>
+</Setting>
+<Setting>
+<Name>VoicemailXfer</Name>
+<Description>Voice Mail Destination</Description>
+<Value>+12819010441</Value>
+</Setting>
+<Setting>
+<Name>AfterHoursXfer</Name>
+<Description>After Hours Destination</Description>
+<Value>+15553334565</Value>
+</Setting>
+<Setting>
+<Name>Timezone</Name>
+<Description>Set Call Center Timezone</Description>
+<Value>US/Central</Value>
+</Setting>
+<Setting>
+<Name>VoicemailOpt</Name>
+<Description>Allow Voicemail Opt Out</Description>
+<Value>Disabled</Value>
+</Setting>
+<Setting>
+<Name>CallVariableLayout</Name>
+<Description>Sets the custom call variable layout</Description>
+<Value>Marion</Value>
+</Setting>
+<Setting>
+<Name>RecordingCCG</Name>
+<Description>Sets the Call Control Group for Recording</Description>
+<Value>2</Value>
+</Setting>
+<Setting>
+<Name>CallbackCCG</Name>
+<Description>Sets the Call Control Group for Callback</Description>
+<Value>2</Value>
+</Setting>
+<Setting>
+<Name>CallbackDialogGroup</Name>
+<Description>Sets the Dialog Group for Callback</Description>
+<Value>1</Value>
+</Setting>
+<Setting>
+<Name>CallbackCSQ</Name>
+<Description>CSQ for Callback</Description>
+<Value>MarionCSQ</Value>
+</Setting>
+<Setting>
+<Name>CallbackDN</Name>
+<Description>DN for Callback Application</Description>
+<Value>3010</Value>
+</Setting>
+</Settings>
+<SystemState>
+<State>
+<Name>Emergency</Name>
+<Transfer>Enabled</Transfer>
+<Destination>+12819010441</Destination>
+</State>
+<State>
+<Name>Training</Name>
+<Transfer>Disabled</Transfer>
+<Destination>+12819010441</Destination>
+</State>
+<State>
+<Name>Lunch</Name>
+<Transfer>Enabled</Transfer>
+<Destination>+18322178530</Destination>
+</State>
+</SystemState>
+<DID>
+<Agent>
+<Number>+12819010441</Number>
+<Resource>attendant</Resource>
+<Redirect>Voicemail</Redirect>
+<Voicemail>+18322178530</Voicemail>
+</Agent>
+</DID>
+</Parameters>
